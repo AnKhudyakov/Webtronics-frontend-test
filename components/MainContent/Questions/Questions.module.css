@@ -1,0 +1,156 @@
+.container {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 180px;
+  width: 1224px;
+  height: 738px;
+}
+
+.title_first {
+  position: relative;
+  width: 641px;
+  height: 172px;
+  font-family: "Clash Display", sans-serif;
+  margin: 0 auto;
+}
+
+.questions {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  display: grid;
+  grid-template-columns: 496px 1fr;
+  column-gap: 24px;
+  margin-top: 56px;
+}
+
+.question_left {
+  position: relative;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+}
+
+.question_right {
+  height: 406px;
+  display: grid;
+  grid-template-rows: 60px * 5;
+  row-gap: 24px;
+}
+
+.btn {
+  border-radius: 8px;
+}
+
+.p1 {
+  width: 100%;
+  height: 22px;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+}
+
+.img {
+  position: absolute;
+  width: 1224px;
+  height: 690px;
+  margin-top: -35px;
+  left:0;
+  top:0;
+  /* scale: 3.53; */
+  margin-left: -80px;
+  background-image: url("../../assets/question.png");
+  /* overflow: hidden; */
+  background-position:center;
+  background-repeat: no-repeat; 
+  object-fit: cover;
+}
+
+
+
+
+.step {
+  position: relative;
+  width: 491px;
+}
+
+.arrows_left {
+  margin-left: -80px;
+  height: 768px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.arrows_right {
+  position: absolute;
+  right: 0;
+  top: 123px;
+  height: 768px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin-left: 80px; */
+  transform: rotate(180deg);
+}
+
+.img_left,
+.img_right {
+  position: absolute;
+  top: -18.5px;
+  right: 0;
+  width: 146px;
+  height: 228px;
+}
+
+.img_right {
+  transform: rotate(180deg);
+  left: -18.5px;
+}
+
+@media (max-width: 1235px) {
+  .container {
+    max-width: 970px;
+    height: auto;
+  }
+  .questions {
+    display: block;
+  }
+  
+.img{
+  display: none;
+}
+
+  .question_right {
+    margin-top: 180px;
+  }
+  .questions,.question_left {
+    height: auto;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 750px;
+  }
+
+  .steps {
+    margin: 0 auto;
+    display: flex;
+  }
+  .steps_right {
+    margin-left: -200px;
+  }
+  
+}
+
+@media (max-width: 479.98px) {
+  .container {
+    max-width: none;
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,137 @@
+.container {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 180px;
+  width: 1224px;
+  height: 612px;
+}
+
+.column {
+  display: grid;
+  grid-template-columns: 392px 1fr;
+  column-gap: 23px;
+  margin-top: 48px;
+}
+
+.title_first {
+  position: relative;
+  /* width: 100%;*/
+  height: 86px;
+  font-family: "Clash Display", sans-serif;
+}
+
+.slider {
+  position: relative;
+  height: 478px;
+  /* width: 606px;*/
+}
+
+.title_second {
+  height: 29px;
+  line-height: 120%;
+  font-family: "Clash Display", sans-serif;
+}
+
+.column_left {
+  text-align: left;
+  margin-top: 124px;
+}
+
+.title_desc {
+  position: relative;
+  max-width: 486px;
+  height: 88px;
+  margin-top: 17px;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.arrows{
+ display: flex;
+}
+.arrow_left{
+  transform: rotate(180deg);
+  margin-right: 24px;
+}
+
+.lines {
+  position: relative;
+  width: 394px;
+  height: 156.59px;
+  background-image: url(/components/assets/line.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icons {
+  height: 422px;
+  width: 809px;
+  margin-top: 21px;
+  display: grid;
+  grid-template-columns: 392px 184px 184px;
+  column-gap: 24.5px;
+}
+
+.counter {
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.count {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Clash Display", sans-serif;
+  line-height: 120%;
+}
+
+.p1 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  margin-left: 8px;
+  color: #fff;
+  font-family: "Clash Display", sans-serif;
+}
+
+@media (max-width: 1235px) {
+  .container {
+    max-width: 970px;
+    /* margin-left: -485px; */
+  }
+  .icons{
+    grid-template-columns: 184px 184px 184px;
+    width: 601px;  
+  }
+  
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 750px;
+    grid-template-areas: "a a" "m m" "d d";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 86px 1fr 1fr;
+    column-gap: 0;
+    row-gap: 56px;
+  }
+
+  .mentors {
+    margin: 0 auto;
+  }
+
+  .title_desc {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .container {
+    max-width: none;
+    padding: 0 10px;
+  }
+}

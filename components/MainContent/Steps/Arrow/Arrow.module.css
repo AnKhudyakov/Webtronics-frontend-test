@@ -1,0 +1,29 @@
+.container {
+  position: relative;
+  width: 104px;
+  height: 24px;
+  margin: 0 auto;
+}
+
+.arrow {
+  position: absolute;
+  width: 76px;
+  height: 5px;
+  left: 0;
+  top: 9.5px;
+  /* background: linear-gradient(
+    152.14deg,
+    rgba(21, 191, 253, 0.7) 9.96%,
+    rgba(156, 55, 253, 0.7) 100%
+  ); */
+}
+
+.circle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #3b48d0;
+}

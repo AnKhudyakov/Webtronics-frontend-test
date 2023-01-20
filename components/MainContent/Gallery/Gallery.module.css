@@ -1,0 +1,162 @@
+.container {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 180px;
+  width: 1224px;
+  height: 808px;
+}
+
+.column {
+  position: relative;
+  display: grid;
+  grid-template-columns: 288px 1fr;
+  column-gap: 24px;
+  margin-top: 48px;
+}
+
+.title_first {
+  position: relative;
+  /* width: 100%;*/
+  height: 86px;
+  font-family: "Clash Display", sans-serif;
+}
+
+.slider {
+  position: relative;
+  height: 478px;
+  text-align: left;
+  /* width: 606px;*/
+}
+
+.title_second {
+  height: 29px;
+  line-height: 120%;
+  font-family: "Clash Display", sans-serif;
+}
+
+.column_left {
+  height: 630px;
+  position: relative;
+  text-align: left;
+  margin-top: 44px;
+}
+
+.title_desc {
+  position: relative;
+  height: 110px;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.icons {
+  height: 422px;
+  width: 809px;
+  margin-top: 21px;
+  display: grid;
+  grid-template-columns: 392px 184px 184px;
+  column-gap: 24.5px;
+}
+
+.p1 {
+  width: 868px;
+  height: 88px;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 139px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  line-height: 140%;
+}
+
+.img4 {
+  position: relative;
+  width: 288px;
+  height: 434px;
+  margin-top: 86px;
+}
+
+.pictures{
+  position: relative;
+  width: 912px;
+  height: 434px;
+  display: grid;
+  grid-template-areas: "a b" "a c";
+  grid-template-columns: "600px 288px";
+  grid-template-rows: "209px 201px";
+  column-gap: 24px;
+  row-gap: 24px;
+}
+
+.img1 {
+  grid-area: a;
+  width: 600px;
+  height: 434px;
+  border-radius: 16px;
+}
+
+.img2 {
+  
+  grid-area: b;
+  width: 288px;
+  height: 209px;
+  border-radius: 16px;
+}
+
+.img3 {
+  
+  grid-area: c;
+  width: 288px;
+  height: 201px;
+  border-radius: 16px;
+}
+
+@media (max-width: 1235px) {
+  .container {
+    max-width: 970px;
+    /* margin-left: -485px; */
+  }
+  .pictures{
+    width: 612px;  
+    grid-template-columns: "300px 288px";
+  }
+  .img1 {
+    width: 300px;
+    height: 434px;
+    object-fit: cover;
+  }
+  .p1 {
+    width: 568px;
+    margin-top: 130px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 750px;
+    grid-template-areas: "a a" "m m" "d d";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 86px 1fr 1fr;
+    column-gap: 0;
+    row-gap: 56px;
+  }
+
+  .mentors {
+    margin: 0 auto;
+  }
+
+  .title_desc {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .container {
+    max-width: none;
+    padding: 0 10px;
+  }
+}

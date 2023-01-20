@@ -1,0 +1,115 @@
+.container,
+.container_open {
+  position: relative;
+  width: 704px;
+  height: 62px;
+  background: linear-gradient(
+    28.96deg,
+    rgba(21, 191, 253, 0.7) 0%,
+    rgba(156, 55, 253, 0.7) 100%
+  );
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.container:hover,
+.container_open:hover {
+  cursor: pointer;
+}
+
+.wrapper,
+.wrapper_open {
+  position: absolute;
+  width: 702px;
+  height: 60px;
+  left: 1px;
+  top: 1px;
+  border-radius: 8px;
+  background: #0c102d;
+}
+
+.img {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  right: 20px;
+  top: 20px;
+}
+
+.imgMinus {
+  position: absolute;
+  width: 16px;
+  height: 3px;
+  right: 24px;
+  top: 26px;
+}
+
+.filter,
+.filter_open {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 702px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  /* backdrop-filter: blur(5px); */
+  /* transform: rotate(180deg); */
+}
+
+.filter:before {
+  content: "";
+  position: absolute;
+  bottom: -1.5px;
+  right: -1.5px;
+  border-bottom: 28px solid rgba(12, 16, 44,1);
+  border-left: 28px solid #171c38;
+}
+
+.container_open {
+  height: 166px;
+}
+.wrapper_open,
+.filter_open {
+  height: 164px;
+}
+
+.filter_open:before {
+  content: "";
+  position: absolute;
+  bottom: -1.5px;
+  right: -1.5px;
+  border-bottom: 28px solid rgba(12, 16, 44);
+  border-left: 28px solid #171c38;
+}
+
+.block {
+  content: "";
+  position: absolute;
+  top: -1.5px;
+  left: -1.5px;
+  border-bottom: 28px solid #171c38;
+  border-left: 28px solid rgba(12, 16, 44);
+}
+
+.title_desc {
+  position: relative;
+  width: 100%;
+  padding: 16.5px 16px 16.5px 24px;
+  font-family: "Clash Display";
+  line-height: 120%;
+  text-align: left;
+}
+
+.p1 {
+  position: relative;
+  width: 606px;
+  height: 66px;
+  padding-left: 24px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}

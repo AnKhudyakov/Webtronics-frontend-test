@@ -1,0 +1,153 @@
+.wrapper {
+  position: relative;
+  height: 815px;
+  width: 100%;
+  margin: 0 auto;
+  /* background-color: rgba(12, 16, 45); */
+}
+
+.container_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  
+}
+
+.container {
+  position: absolute;
+  width: 1224px;
+  height: 100%;
+  left: 50%;
+  margin-left: -612px;
+  top: 187px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* mix-blend-mode: normal; */
+}
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 382px;
+  left: 0;
+  top: 433px;
+  /* mix-blend-mode: normal; */
+  background: #0c102d;
+  background: linear-gradient(
+    180deg,
+    rgba(12, 16, 45, 0) -4.71%,
+    #0c102d 97.38%
+  );
+}
+.img {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/homeimage.png");
+  mix-blend-mode: normal;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.title_first {
+  position: relative;
+  width: 775px;
+  height: 180px;
+  left: 0;
+  top: 0;
+  font-family: "Clash Display", sans-serif;
+  line-height: 120%;
+}
+
+.title_second {
+  position: absolute;
+  width: 782px;
+  height: 180px;
+  right: 130px;
+  top: 156px;
+  font-family: "Clash Display", sans-serif;
+  line-height: 120%;
+}
+
+.title_desc {
+  position: absolute;
+  width: 359px;
+  height: 66px;
+  right: 27px;
+  top: 74px;
+  font-family: "Inter", sans-serif;
+  line-height: 140%;
+  color: #fff;
+}
+
+.title_courses {
+  position: absolute;
+  width: 137px;
+  height: 38px;
+  right: 47px;
+  top: 328px;
+  font-family: "Clash Display", sans-serif;
+}
+
+.btn {
+  position: absolute;
+  width: 288px;
+  height: 72px;
+  left: 0;
+  top: 210px;
+}
+
+@media (max-width: 1235px) {
+  .container {
+    max-width: 970px;
+    margin-left: -485px;
+  }
+
+  .title_desc {
+    top: 400px;
+    right: 234px;
+  }
+
+  .btn {
+    top: 400px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 750px;
+    margin-left: -375px;
+  }
+
+  .title_first {
+    left: 50%;
+    margin-left: -387px;
+  }
+
+  .title_second {
+    right: 50%;
+    margin-right: -391px;
+  }
+
+  .title_desc {
+    right: -20px;
+  }
+
+  .title_courses {
+    right: 0;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .container {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
