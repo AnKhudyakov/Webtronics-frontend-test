@@ -3,15 +3,13 @@
   margin: 0 auto;
   text-align: center;
   width: 1224px;
-  height: 598px; 
+  height: 598px;
   margin-top: 181px; /* DELETE*/
   background: linear-gradient(
     28.96deg,
     rgba(21, 191, 253, 0.7) 0%,
     rgba(156, 55, 253, 0.7) 100%
   );
-  /* background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(5px); */
   border-radius: 20px;
   display: flex;
   align-items: center;

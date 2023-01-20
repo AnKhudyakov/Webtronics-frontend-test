@@ -16,8 +16,6 @@
 .title_first {
   position: relative;
   grid-area: a;
-  /* width: 100%;
-  height: 86px; */
   font-family: "Clash Display", sans-serif;
 }
 
@@ -26,8 +24,6 @@
   grid-area: m;
   width: 606px;
   height: 483px;
-  /* left: 0px;
-  top: 142px; */
   font-family: "Clash Display", sans-serif;
 }
 
@@ -37,8 +33,6 @@
   max-width: 486px;
   height: 88px;
   margin-top: 109px;
-  /* right: 115px; */
-  /* top: 251px; */
   text-align: left;
   font-family: "Inter", sans-serif;
   color: #fff;
@@ -61,7 +55,7 @@
   width: 188px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 21px ;
+  column-gap: 21px;
 }
 
 .icon2 {
@@ -71,7 +65,6 @@
 @media (max-width: 1235px) {
   .container {
     max-width: 970px;
-    /* margin-left: -485px; */
   }
 }
 

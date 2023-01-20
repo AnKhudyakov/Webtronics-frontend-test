@@ -41,18 +41,6 @@ const Contacts = () => {
     formState: { errors },
   } = useForm<Inputs>({ resolver: yupResolver(validationSchema) });
 
-  // useEffect(() => {
-  //   if (errors.name) {
-  //     dispatch(setErrorName());
-  //   }
-  //   if (errors.phone) {
-  //     dispatch(setErrorPhone());
-  //   }
-  //   if (errors.email) {
-  //     dispatch(setErrorEmail());
-  //   }
-  // }, [errors]);
-
   const onSubmit: SubmitHandler<Inputs> = (e) => {
     //GET
     Fetcher.GetFeedback()
@@ -75,11 +63,7 @@ const Contacts = () => {
       })
       .catch((err) => {
         console.log(err);
-        toast.error(
-          err.message
-            ? err.message
-            : "Sorry, Please, try again"
-        );
+        toast.error(err.message ? err.message : "Sorry, Please, try again");
       });
   };
 
@@ -112,9 +96,7 @@ const Contacts = () => {
             ))}
           </div>
           <div className={styles.btn}>
-            <Button //type="submit"
-              name={"Send"}
-            />
+            <Button name={"Send"} />
           </div>
           <ToastContainer
             position="bottom-center"

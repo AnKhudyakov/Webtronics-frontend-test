@@ -1,9 +1,6 @@
 import styles from "./Questions.module.css";
 import IconQuestion from "./IconQuestion/IconQuestion";
-import Image from "next/image";
 import { useAppSelector } from "../../../app/hooks/hooks";
-import question from "../../assets/question.png";
-import question1 from "../../assets/question1.png";
 const Questions = () => {
   const questions = useAppSelector((state) => state.form.questions);
 

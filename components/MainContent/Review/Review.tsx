@@ -1,8 +1,6 @@
 import styles from "./Review.module.css";
 import IconReview from "./IconReview/IconReview";
 import Arrow from "./Arrow/Arrow";
-import Image from "next/image";
-import { useAppSelector } from "../../../app/hooks/hooks";
 import { useState } from "react";
 
 const Review = () => {

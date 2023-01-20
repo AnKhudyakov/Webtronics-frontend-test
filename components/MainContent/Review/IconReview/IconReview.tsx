@@ -22,11 +22,7 @@ const IconReview = (props: Props) => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}></div>
-      <Image src={icon} alt="Photo" className={styles.img} 
-      layout="fill"
-      //width="390"
-      //height="420"
-       />
+      <Image src={icon} alt="Photo" className={styles.img} layout="fill" />
       <div className={styles.filter}></div>
     </div>
   );

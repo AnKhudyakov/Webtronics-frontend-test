@@ -1,6 +1,5 @@
 import Link from "next/link";
 import styles from "./Nav.module.css";
-//import { useSelector } from "react-redux";
 import { useAppSelector } from "../../../app/hooks/hooks"
 
 type Props = {

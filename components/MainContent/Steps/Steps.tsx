@@ -12,7 +12,6 @@ const Steps = () => {
     <div className={styles.container}>
       <h2 className={styles.title_first}>Steps</h2>
       <div className={styles.steps}>
-        {/* <Image src={line} alt="Line" /> */}
         <div className={styles.steps_left}>
           {stepsLeft.map((step) => (
             <div className={styles.step} key={step.name}>
