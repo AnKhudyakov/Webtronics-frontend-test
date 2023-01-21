@@ -8,9 +8,9 @@
 .arrow {
   position: absolute;
   width: 76px;
-  height: 5px;
+  height: 6px;
   left: 0;
-  top: 9.5px;
+  top: 9px;
 }
 
 .circle {

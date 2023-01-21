@@ -3,13 +3,31 @@
   position: relative;
   width: 704px;
   height: 62px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     28.96deg,
     rgba(21, 191, 253, 0.7) 0%,
     rgba(156, 55, 253, 0.7) 100%
-  );
+  ); */
   border-radius: 8px;
   margin: 0 auto;
+  /* background: #0c102d; */
+  /* background:linear-gradient(-45deg, transparent 20px, hwb(233 5% 82%) 0);
+   */
+  background: linear-gradient(
+        -45deg,
+        transparent 20px,
+        rgba(21, 191, 253, 0.7) 0%,
+        rgba(156, 55, 253, 0.7) 100% 0
+      )
+      right,
+    linear-gradient(
+      135deg,
+      transparent 20px,
+      rgba(21, 191, 253, 0.7) 0%,
+      rgba(156, 55, 253, 0.7) 100% 0
+    );
+    background-size: 50% 100%;
+background-repeat: no-repeat;
 }
 
 .container:hover,
@@ -25,7 +43,12 @@
   left: 1px;
   top: 1px;
   border-radius: 8px;
-  background: #0c102d;
+  /* background: #0c102d; */
+  background: linear-gradient(-45deg, transparent 20px, #0c102d 0)
+  right,
+    linear-gradient(135deg, transparent 20px, #0c102d 0) left;
+    background-size: 50% 100%;
+background-repeat: no-repeat;
 }
 
 .img {
@@ -51,18 +74,19 @@
   top: 1px;
   width: 702px;
   height: 60px;
-  background: rgba(255, 255, 255, 0.05);
+  /* background: rgba(255, 255, 255, 0.05); */
   border-radius: 8px;
-}
-
-.filter:before {
-  content: "";
-  position: absolute;
-  bottom: -1.5px;
-  right: -1.5px;
-  border-bottom: 28px solid rgba(12, 16, 44,1);
-  border-left: 28px solid #171c38;
-}
+  /* background: rgba(255, 255, 255, 0.05); */
+  background: linear-gradient(
+        -45deg,
+        transparent 20px,
+        rgba(255, 255, 255, 0.05) 0
+      )
+      right,
+    linear-gradient(135deg, transparent 20px, rgba(255, 255, 255, 0.05) 0) left;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+  }
 
 .container_open {
   height: 166px;
@@ -70,24 +94,6 @@
 .wrapper_open,
 .filter_open {
   height: 164px;
-}
-
-.filter_open:before {
-  content: "";
-  position: absolute;
-  bottom: -1.5px;
-  right: -1.5px;
-  border-bottom: 28px solid rgba(12, 16, 44);
-  border-left: 28px solid #171c38;
-}
-
-.block {
-  content: "";
-  position: absolute;
-  top: -1.5px;
-  left: -1.5px;
-  border-bottom: 28px solid #171c38;
-  border-left: 28px solid rgba(12, 16, 44);
 }
 
 .title_desc {
