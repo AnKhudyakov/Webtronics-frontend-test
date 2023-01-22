@@ -139,6 +139,7 @@
     grid-template-rows: 86px 1fr 1fr;
     column-gap: 0;
     row-gap: 56px;
+    height: 1362px;
   }
 
   .mentors {
@@ -147,6 +148,16 @@
 
   .title_desc {
     margin: 0 auto;
+  }
+  .column {
+    grid-template-columns: 288px;
+    row-gap: 24px;
+  }
+  .column_left{
+    margin-top: 0;
+  }
+  .p1{
+    margin-top: 30px;
   }
 }
 

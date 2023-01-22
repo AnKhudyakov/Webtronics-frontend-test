@@ -79,7 +79,6 @@ const Review = () => {
         <div className={styles.slider}>
           <div className={styles.counter}>
             <div className={styles.counter}>
-              <div></div>
               <h4 className={styles.count}>{page}/</h4>
               <p className={styles.p1}>3</p>
             </div>
