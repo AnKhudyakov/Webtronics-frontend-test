@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./IconQuestion.module.css";
-import icon from "../../../../components/assets/plus.png";
+import icon from "../../../../components/assets/Plus.png";
 import { useState } from "react";
 import iconMinus from "../../../../components/assets/minus.png";
 type Props = {

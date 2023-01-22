@@ -25,8 +25,7 @@ const validationSchema = yup.object().shape({
   phone: yup
     .string()
     .required("Required phone")
-    .matches(phoneRegExp, "Phone number is not valid")
-    .min(6),
+    .matches(phoneRegExp, "Phone number is not valid"),
 });
 
 const Contacts = () => {
