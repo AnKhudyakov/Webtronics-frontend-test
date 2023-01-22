@@ -61,12 +61,10 @@ const Contacts = () => {
         });
       })
       .catch((err) => {
-        console.log(err);
         toast.error(err.message ? err.message : "Sorry, Please, try again");
       });
   };
- console.log(errors);
- 
+
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}></div>
@@ -94,21 +92,21 @@ const Contacts = () => {
                 errors={errors}
               ></Input>
             ))} */}
-             <Input
-                name={fields[0].name}
-                register={register}
-                errors={errors.name}
-              ></Input>
-              <Input
-                name={fields[1].name}
-                register={register}
-                errors={errors.phone}
-              ></Input>
-              <Input
-                name={fields[2].name}
-                register={register}
-                errors={errors.email}
-              ></Input>
+            <Input
+              name={fields[0].name}
+              register={register}
+              errors={errors.name}
+            ></Input>
+            <Input
+              name={fields[1].name}
+              register={register}
+              errors={errors.phone}
+            ></Input>
+            <Input
+              name={fields[2].name}
+              register={register}
+              errors={errors.email}
+            ></Input>
           </div>
           <div className={styles.btn}>
             <Button name={"Send"} />
