@@ -10,6 +10,12 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import "react-toastify/dist/ReactToastify.css";
 
+export type MyInputTypes = {
+  name: string;
+  email: string;
+  phone: string;
+}
+
 const phoneRegExp =
   /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
@@ -32,7 +38,7 @@ const Contacts = () => {
     watch,
     reset,
     formState: { errors },
-  } = useForm<FieldValues>({ resolver: yupResolver(validationSchema) });
+  } = useForm<MyInputTypes>({ resolver: yupResolver(validationSchema) });
 
   const onSubmit: SubmitHandler<FieldValues> = (e) => {
     //GET
@@ -78,14 +84,6 @@ const Contacts = () => {
                 : styles.inputs
             }
           >
-            {/* {fields.map((field) => (
-              <Input
-                name={field.name}
-                key={field.name}
-                register={register}
-                errors={errors}
-              ></Input>
-            ))} */}
             <Input
               name={fields[0].name}
               register={register}

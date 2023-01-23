@@ -5,38 +5,38 @@ import type { RootState } from "../../pages/index";
 type menuObj = {
   href: string;
   name: string;
-}
+};
 
 type mentorsObj = {
   icon: string;
   name: string;
   desc: string;
-}
+};
 
 type newFeedback = {
   id: number | null;
   email: string;
   name: string;
   phone: string;
-}
+};
 
 type Steps = {
   name: string;
   title: string;
   desc: string;
-}
+};
 
 type Questions = {
   id: number;
   name: string;
   desc: string;
   open: boolean;
-}
+};
 
 type Fields = {
-  name: string;
+  name: "name" | "email" | "phone";
   error: boolean;
-}
+};
 
 type FormState = {
   id: number | null;
@@ -49,7 +49,7 @@ type FormState = {
   stepsLeft: Array<Steps>;
   stepsRight: Array<Steps>;
   questions: Array<Questions>;
-}
+};
 
 const initialState: FormState = {
   id: null,
@@ -86,9 +86,9 @@ const initialState: FormState = {
     },
   ],
   fields: [
-    { name: "Name", error: false },
-    { name: "Phone", error: false },
-    { name: "Email", error: false },
+    { name: "name", error: false },
+    { name: "phone", error: false },
+    { name: "email", error: false },
   ],
   techs: ["Angular", "React", "Vue", "JavaScript"],
   stepsLeft: [
@@ -182,7 +182,8 @@ export const formSlice = createSlice({
   },
 });
 
-export const { setId,setErrorName,setErrorPhone,setErrorEmail } = formSlice.actions;
+export const { setId, setErrorName, setErrorPhone, setErrorEmail } =
+  formSlice.actions;
 
 export const selectId = (state: RootState) => state.form.id;
 export const selectMenu = (state: RootState) => state.form.menu;
