@@ -1,54 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 import type { RootState } from "../../pages/index";
-
-type menuObj = {
-  href: string;
-  name: string;
-};
-
-type mentorsObj = {
-  icon: string;
-  name: string;
-  desc: string;
-};
-
-export type newFeedback = {
-  id: number | null;
-  email: string;
-  name: string;
-  phone: string;
-};
-
-export type Steps = {
-  name: string;
-  title: string;
-  desc: string;
-};
-
-export type Questions = {
-  id?: number;
-  name: string;
-  desc: string;
-};
-
-type Fields = {
-  name: "name" | "email" | "phone";
-  error: boolean;
-};
-
-type FormState = {
-  id: number | null;
-  menu: Array<menuObj>;
-  menuFooter: Array<menuObj>;
-  mentors: Array<mentorsObj>;
-  fields: Array<Fields>;
-  techs: Array<string>;
-  newFeedback: newFeedback;
-  stepsLeft: Array<Steps>;
-  stepsRight: Array<Steps>;
-  questions: Array<Questions>;
-};
+import type { FormState } from "../types/types";
 
 const initialState: FormState = {
   id: null,

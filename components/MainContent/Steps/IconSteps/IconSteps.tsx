@@ -1,5 +1,5 @@
 import styles from "./IconSteps.module.css";
-import type { Steps } from "../../../state";
+import type { Steps } from "../../../types/types";
 
 const IconSteps = (props: Steps) => {
   const { name, title, desc } = props;

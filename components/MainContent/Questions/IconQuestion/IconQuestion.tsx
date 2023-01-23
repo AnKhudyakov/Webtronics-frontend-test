@@ -3,7 +3,7 @@ import styles from "./IconQuestion.module.css";
 import icon from "../../../../components/assets/Plus.png";
 import { useState } from "react";
 import iconMinus from "../../../../components/assets/minus.png";
-import type { Questions } from "../../../state";
+import type { Questions } from "../../../types/types";
 
 const IconQuestion = (props: Questions) => {
   const { name, desc } = props;
