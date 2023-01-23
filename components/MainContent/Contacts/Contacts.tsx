@@ -14,7 +14,14 @@ export type MyInputTypes = {
   name: string;
   email: string;
   phone: string;
-}
+};
+
+type GetObj = {
+  id: string;
+  email: string;
+  phone: string;
+  name: string;
+};
 
 const phoneRegExp =
   /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
@@ -43,7 +50,9 @@ const Contacts = () => {
   const onSubmit: SubmitHandler<FieldValues> = (e) => {
     //GET
     Fetcher.GetFeedback()
-      .then((data: any) => {
+      .then((data: Array<GetObj>) => {
+        console.log(data);
+
         dispatch(setId(data.length + 1));
         const newData = {
           id: id,
