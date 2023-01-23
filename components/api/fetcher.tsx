@@ -5,7 +5,7 @@ const instance = axios.create({
 });
 
 type dataPostObj = {
-  id: number;
+  id: number | null;
   email: string;
   name: string;
   phone: string;
