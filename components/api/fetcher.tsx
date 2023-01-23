@@ -4,7 +4,7 @@ const instance = axios.create({
   baseURL: "http://localhost:3004/",
 });
 
-interface dataPostObj {
+type dataPostObj = {
   id: number;
   email: string;
   name: string;

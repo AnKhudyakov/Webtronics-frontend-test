@@ -2,43 +2,43 @@ import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 import type { RootState } from "../../pages/index";
 
-interface menuObj {
+type menuObj = {
   href: string;
   name: string;
 }
 
-interface mentorsObj {
+type mentorsObj = {
   icon: string;
   name: string;
   desc: string;
 }
 
-interface newFeedback {
+type newFeedback = {
   id: number | null;
   email: string;
   name: string;
   phone: string;
 }
 
-interface Steps {
+type Steps = {
   name: string;
   title: string;
   desc: string;
 }
 
-interface Questions {
+type Questions = {
   id: number;
   name: string;
   desc: string;
   open: boolean;
 }
 
-interface Fields {
+type Fields = {
   name: string;
   error: boolean;
 }
 
-interface FormState {
+type FormState = {
   id: number | null;
   menu: Array<menuObj>;
   menuFooter: Array<menuObj>;

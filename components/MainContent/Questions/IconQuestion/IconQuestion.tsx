@@ -9,7 +9,7 @@ type Props = {
   open: boolean;
 };
 
-export interface openData {
+export type openData = {
   open: boolean;
 }
 
