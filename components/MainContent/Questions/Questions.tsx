@@ -19,7 +19,6 @@ const Questions = () => {
               key={question.id}
               desc={question.desc}
               name={question.name}
-              open={question.open}
             ></IconQuestion>
           ))}
         </div>
