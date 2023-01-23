@@ -14,7 +14,7 @@ interface mentorsObj {
 }
 
 interface newFeedback {
-  id: number;
+  id: number | null;
   email: string;
   name: string;
   phone: string;
@@ -39,7 +39,7 @@ interface Fields {
 }
 
 interface FormState {
-  id: number;
+  id: number | null;
   menu: Array<menuObj>;
   menuFooter: Array<menuObj>;
   mentors: Array<mentorsObj>;
@@ -52,8 +52,8 @@ interface FormState {
 }
 
 const initialState: FormState = {
-  id: NaN,
-  newFeedback: { id: NaN, email: "", name: "", phone: "" },
+  id: null,
+  newFeedback: { id: null, email: "", name: "", phone: "" },
   menu: [
     { href: "about", name: "About" },
     { href: "programs", name: "Programs" },
