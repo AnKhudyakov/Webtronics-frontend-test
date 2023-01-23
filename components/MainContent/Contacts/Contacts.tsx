@@ -1,7 +1,7 @@
 import styles from "./Contacts.module.css";
 import Input from "./Input/Input";
 import Button from "../../Button/Button";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useForm, SubmitHandler, FieldValues } from "react-hook-form";
 import { Fetcher } from "../../api/fetcher";
 import { setId } from "../../state";
 import { useAppSelector, useAppDispatch } from "../../../app/hooks/hooks";
@@ -9,12 +9,6 @@ import { ToastContainer, toast } from "react-toastify";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import "react-toastify/dist/ReactToastify.css";
-
-type Inputs = {
-  email: string;
-  name: string;
-  phone: string;
-};
 
 const phoneRegExp =
   /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
@@ -38,9 +32,9 @@ const Contacts = () => {
     watch,
     reset,
     formState: { errors },
-  } = useForm<Inputs>({ resolver: yupResolver(validationSchema) });
+  } = useForm<FieldValues>({ resolver: yupResolver(validationSchema) });
 
-  const onSubmit: SubmitHandler<Inputs> = (e) => {
+  const onSubmit: SubmitHandler<FieldValues> = (e) => {
     //GET
     Fetcher.GetFeedback()
       .then((data: any) => {

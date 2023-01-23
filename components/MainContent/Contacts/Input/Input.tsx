@@ -1,15 +1,14 @@
-import { useEffect, useState } from "react";
 import styles from "./Input.module.css";
+import { UseFormRegister, FieldValues } from "react-hook-form";
 
 type Props = {
   name: string;
-  register: any;
+  register: UseFormRegister<FieldValues>;
   errors: any;
 };
 
 const Input = (props: Props) => {
   const { name, register, errors } = props;
-  const [error, setError] = useState(false);
   const fieldName = name.toLowerCase();
 
   return (
