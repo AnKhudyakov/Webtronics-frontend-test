@@ -13,24 +13,23 @@ type mentorsObj = {
   desc: string;
 };
 
-type newFeedback = {
+export type newFeedback = {
   id: number | null;
   email: string;
   name: string;
   phone: string;
 };
 
-type Steps = {
+export type Steps = {
   name: string;
   title: string;
   desc: string;
 };
 
-type Questions = {
-  id: number;
+export type Questions = {
+  id?: number;
   name: string;
   desc: string;
-  open: boolean;
 };
 
 type Fields = {
@@ -134,31 +133,26 @@ const initialState: FormState = {
       id: 1,
       name: "What is the price?",
       desc: "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too.",
-      open: false,
     },
     {
       id: 2,
       name: "What is the price?",
       desc: "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too.",
-      open: false,
     },
     {
       id: 3,
       name: "What is the price?",
       desc: "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too.",
-      open: false,
     },
     {
       id: 4,
       name: "What is the price?",
       desc: "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too.",
-      open: false,
     },
     {
       id: 5,
       name: "What is the price?",
       desc: "Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too.",
-      open: false,
     },
   ],
 };

@@ -44,13 +44,13 @@ const Review = () => {
         setSrc1("man1");
         setSrc2("woman");
         setSrc3("man2");
-        setPage("2");
+        setPage("1");
         break;
       case "man2":
         setSrc1("woman");
         setSrc2("man2");
         setSrc3("man1");
-        setPage("1");
+        setPage("2");
         break;
     }
   };

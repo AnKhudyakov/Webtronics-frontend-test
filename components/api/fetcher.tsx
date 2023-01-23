@@ -1,18 +1,12 @@
 import axios from "axios";
+import type { newFeedback } from "../state";
 
 const instance = axios.create({
   baseURL: "http://localhost:3004/",
 });
 
-type dataPostObj = {
-  id: number | null;
-  email: string;
-  name: string;
-  phone: string;
-}
-
 export const Fetcher = {
-  PostFeedback(dataPost: dataPostObj) {
+  PostFeedback(dataPost: newFeedback) {
     return instance
       .post(`feedback`, { ...dataPost })
       .then((response) => response.data);

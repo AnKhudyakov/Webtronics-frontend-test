@@ -3,17 +3,9 @@ import styles from "./IconQuestion.module.css";
 import icon from "../../../../components/assets/Plus.png";
 import { useState } from "react";
 import iconMinus from "../../../../components/assets/minus.png";
-type Props = {
-  name: string;
-  desc: string;
-  open: boolean;
-};
+import type { Questions } from "../../../state";
 
-export type openData = {
-  open: boolean;
-}
-
-const IconQuestion = (props: Props) => {
+const IconQuestion = (props: Questions) => {
   const { name, desc } = props;
   const [open, setOpen] = useState(false);
 
