@@ -9,7 +9,7 @@ import { ToastContainer, toast } from "react-toastify";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import "react-toastify/dist/ReactToastify.css";
-import type { NewFeedback } from "../../types/types";
+import type { FeedbackType } from "../../types/types";
 
 export type MyInputTypes = {
   name: string;
@@ -44,7 +44,7 @@ const Contacts = () => {
   const onSubmit: SubmitHandler<FieldValues> = (e) => {
     //GET
     Fetcher.GetFeedback()
-      .then((data: Array<NewFeedback>) => {
+      .then((data: Array<FeedbackType>) => {
         dispatch(setId(data.length + 1));
         const newData = {
           id: id,

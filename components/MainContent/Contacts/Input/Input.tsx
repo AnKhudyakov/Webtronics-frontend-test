@@ -2,8 +2,10 @@ import styles from "./Input.module.css";
 import { UseFormRegister, FieldValues, FieldError } from "react-hook-form";
 import type { MyInputTypes } from "../Contacts";
 
+export type Fields = Extract<keyof MyInputTypes, string>
+
 type Props = {
-  name: "name" | "email" | "phone";
+  name: Fields;
   register: UseFormRegister<MyInputTypes>;
   errors: FieldError | undefined;
 };

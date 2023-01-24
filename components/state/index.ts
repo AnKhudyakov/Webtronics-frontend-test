@@ -1,11 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 import type { RootState } from "../../pages/index";
-import type { FormState } from "../types/types";
+import type { Nullable, Fields } from "../types/types";
 
-const initialState: FormState = {
-  id: null,
-  newFeedback: { id: null, email: "", name: "", phone: "" },
+const initialState = {
+  id: null as Nullable<number>,
+  newFeedback: { id: null as Nullable<number>, email: "", name: "", phone: "" },
   menu: [
     { href: "about", name: "About" },
     { href: "programs", name: "Programs" },
@@ -41,7 +41,7 @@ const initialState: FormState = {
     { name: "name", error: false },
     { name: "phone", error: false },
     { name: "email", error: false },
-  ],
+  ] as Array<Fields>,
   techs: ["Angular", "React", "Vue", "JavaScript"],
   stepsLeft: [
     {

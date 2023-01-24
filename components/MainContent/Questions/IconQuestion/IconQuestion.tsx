@@ -3,9 +3,13 @@ import styles from "./IconQuestion.module.css";
 import icon from "../../../../components/assets/Plus.png";
 import { useState } from "react";
 import iconMinus from "../../../../components/assets/minus.png";
-import type { Questions } from "../../../types/types";
 
-const IconQuestion = (props: Questions) => {
+export type Props = {
+  name: string;
+  desc: string;
+};
+
+const IconQuestion = (props: Props) => {
   const { name, desc } = props;
   const [open, setOpen] = useState(false);
 
